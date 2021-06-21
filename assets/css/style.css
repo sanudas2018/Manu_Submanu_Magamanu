@@ -1,0 +1,150 @@
+
+
+p{
+    font-family: PTSerif-Bold;  
+  }
+  
+  * {
+      margin: 0px;
+      padding: 0px;
+      
+  }
+  
+  .container {
+      width: 80%;
+      margin: 0px auto;
+  
+  }
+  a{
+    font-family: tahoma;
+  }
+  
+  /*:after{
+      content: '';
+      clear: both;
+      display: block;
+      
+  }*/
+  
+  body{
+    background-color: #95a5a6;
+  }
+  .nav{
+    width: 100%;
+    background-color: #34495e;
+  }
+  .nav ul{
+    text-align: center;
+  }
+  .nav ul li{
+    display: inline-block;
+  
+    margin-left: -4px;
+  
+    position: relative;
+  
+  }
+  .nav ul li:nth-child(1){
+    border-left: 1px solid white;
+  }
+  .nav ul li a{
+    color: white;
+    text-decoration: none;
+     display: inline-block;
+     padding: 16px 28px;
+     border-right: 1px solid white;
+  }
+  .nav ul li:hover{
+    background-color: white;
+    
+  }
+  .nav ul li:hover > a{
+    color: #34495e;
+  }
+  
+  
+  
+  
+  
+  .nav ul li> ul{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 250px;
+    background-color: #34495e;
+    color: white;
+    /*display: none;*/
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+  transform: scaleY(0);
+  transform-origin: top center;
+  
+    
+  
+  }
+  .nav ul li ul > li{
+    display: block;
+    margin-left: 0px;
+  
+    
+  }
+  .nav ul li:hover > ul{
+    /*display: block;*/
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  
+  }
+  .nav ul li ul li a{
+    display: block;
+    border: none;
+  }
+  .nav ul li ul li:nth-child(1){
+    border: none;
+  }
+  
+  .nav ul li .mage{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 1000px;
+    background-color: #34495e;
+    /*display: none;*/
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+  transform: scaleY(0);
+  transform-origin: top center;
+  
+  
+  }
+  .nav ul li .mage:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .nav ul li .mage ul{
+    width: 30%;
+    float: left;
+    border-right: 1px solid white;
+    
+  }
+  .nav ul li:hover .mage{
+    /*display: block;*/
+  opacity: 1;
+  visibility: visible;
+  
+  transform: scaleY(1);
+  }
+  
+  .nav ul li ul li {
+    position: relative;
+  }
+  .nav ul li ul li ul{
+    position: absolute;
+    top: 0px;
+    left: 100%;
+  }
+
